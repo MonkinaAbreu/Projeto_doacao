@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    :root{
+        --cor-texto: black;
+        --cor-titulo: #FF6500;
+        --cor-menu: #FF8A08;
+        --cor-hover: #FFC100;
+}
+
+body{
+    height: 100vh;
+    background-image: url(fundo_roupas1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: cursive; 
+    font-size: x-large;
+    color: var(--cor-texto);
+    
+}
+
+.noDecoration{
+    color: var(--cor-titulo);
+    text-decoration:  none;
+    text-decoration-line:  none;
+}
+
+.cabecalho{
+    font-size:x-large;
+    display:flex;
+    justify-content: space-evenly;
+    :hover{background-color: #FFC100; }
+        
+}
+
+.parteCentral{
+   
+    padding: 2% 5% 2% 3%;
+    display: block;
+    flex-flow: column wrap;
+}
+
+img{
+    border: 2px solid black;
+    :hover{color: var(--cor-hover)};
+}
+
+.titulo_onde_doar{
+    padding: 1% 5% 1% 3%;
+    justify-content: center;
+}
+
+
+.lista_ongs{
+    padding: 0% 5% 2% 3%;
+    display: flex;
+    gap: 0.5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.rodape{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    background-color: var(--cor-menu);
+    color: var(--cor-texto);
+    padding: 1%;
+    font-size: medium;
+}
